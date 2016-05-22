@@ -1,0 +1,162 @@
+html{
+
+	    background-color: #EFE8E0;
+	    /*rgb格式 rgb（red，green，blue，透明度），0-255，透明度a，0-1*/
+	    background:url(../img/background.jpg);
+	    background-size:cover;
+	    /*背景图案*/
+	    
+}
+
+
+nav{
+	background-color: rgba(63,132,172,0.3);
+
+}
+
+/*定义越详细，优先级越高*/
+ /*选择class, DRY: don't repeat yourself*/ 
+
+
+
+/*选择ul 下的li 使用class*/
+a{
+
+	color: #fff;
+	text-decoration: none;
+}
+.nav-bar{	
+margin: 0;
+
+/*float: left;*/
+
+}
+nav{
+/*display: inline-block;
+width: 100%;*/
+  height: 78px;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  /*将导入栏提高z轴*/
+
+}
+.nav-bar {
+	float: right;
+	padding: 8px;
+}
+
+.nav-bar li{
+display: inline-block;
+border:1px solid #fff;
+border-radius: 7px;
+margin: 10px;
+/*space between a and other objects*/
+padding: 10px;
+/*space between text content and border*/
+/*float: right;*/
+font-size: 20px;
+transition: background-color 0.5s linear;
+/*背景渐变效果*/
+}
+
+.nav-log{
+	/*float: right;*/
+	width: 50px;
+	margin-left: 10px;
+    margin-top: 10px;
+    width: 63px;
+
+}
+/*help calsse*/
+.center{
+	text-align:center;
+}
+.hometitle{
+
+	font-family: 'Courgette', cursive;
+	font-size: 5rem;
+	/*rem,倍数，以14px为基数的方法单位*/
+	/*图片用%*/
+}
+.fullwidth{
+
+	width:100%;
+}
+.post{
+
+border:10px;
+margin: 10px;
+text-align:center;
+
+
+}
+.post div{
+	width:30%;
+	height: 800px;
+	border:8px;
+	margin: 15px;
+	border:10px solid;
+	border-color:white;
+	margin-bottom: 20px;
+	display: inline-block;
+	position: relative;
+	transition: all 0.5s linear;
+	-webkit-filter:brightness(50%);
+    /*filter: grayscale(100%);*/
+
+
+}
+.post div:hover{
+
+width:31%;
+height: 820px;
+-webkit-filter:brightness(100%);
+font-size:2em;
+z-index:50;
+box-shadow: 15px 30px 30px #000;
+text-shadow: 20px 60px 20px #000;
+
+
+
+
+  /* filter: brightness(100%);
+*/
+}
+.post div img
+{
+width:100%;
+height: 100%;
+
+}
+.foot{
+text-align:center;
+
+}
+
+.foot li{
+	display: inline-block;
+	font-size: 1.5em;
+	color: #FFF;
+	border-radius: 41px; 
+	margin: 5px;
+	text-align:center;
+}
+.post div h3{
+position: absolute;
+top: 50%;
+width: 100%;
+font-size: 3em;
+color:#FBECEC;
+transform: translateY(-50%);
+}
+
+
+
+}
+
+.nav-bar li:hover{
+background-color: rgba(255,255,255,0.5);
+cursor: pointer;
+/*点击变化 变化效果要和nav-bar li里对应*/
+}
